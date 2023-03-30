@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>Form</title>
+<body style="background-color:peachpuff; border: 5px solid black; border-radius: 50mm;">
+<!--Parts of form-->
+<h1 style="font-size:40px; text-align: center;">Google form</h1>
+<form style="text-align:center;" action="" method="post" target="_blank" autocomplete="on">
+
+<!--1. First name and Second name-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="fname">First name:</label><br>
+<input style="text-align: center;" type="text" id="fname" required><br>
+<label style="border: 2px solid black; border-width: 0.3mm;" for="Sname">Last name: </label><br>
+<input style="text-align: center;" type="text" id="Sname" required><br><br>
+
+<!--2. Fathers name-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="Faname">Father name:</label><br>
+<input style="text-align: center;" type="text" id="Faname" required><br><br>
+
+
+<!--3. Contact Number-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="num">Phone number:</label><br>
+<input type="tel" style="text-align: center;" id="num" maxlength="12" placeholder="0123-456-789" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
+
+<!--4. E-mail-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="mail">E-mail:</label><br>
+<input type="email" placeholder="yasslight0047@gmail.com" id="mail" required><br>
+
+<!--5. Optional mail-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="mail2">Optional email:</label><br>
+<input style="text-align: center;" type="email" id="mail2" placeholder="Optional"><br><br>
+
+<!--6. Date of birth and age-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="dob">Date of Birth:</label><br>
+<input style="text-align: center;" type="date" id="dob" required><br>
+<label for="age">Age:</label><br>
+<input type="number" id="age" value="55" min="1" max="110" step="1" required><br><br>
+
+<!--7. Gender-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="Gender">Gender:</label><br>
+<input type="radio" id="male" name="gender">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender">
+<label for="female">Female</label><br>
+<input type="radio" id="trans" name="gender">
+<label for="trans">Transgender</label><br><br>
+
+<!--8. Address-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="add">Address:</label><br>
+<textarea name="add" id="add" placeholder="Type address here:" cols="30" rows="10" required></textarea><br><br>
+
+<!--9. Hometown-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="home">Hometown:</label><br>
+<input list="home">
+<datalist id="home" required>
+    <option value="Jaipur">
+    <option value="Jodhpur">
+    <option value="Kota">
+    <option value="Ajmer">
+    <option value="Agra">
+    <option value="Udaipur">
+    <option value="Samod">
+    <option value="Phulera">
+    <option value="Thari">
+    <option value="Shahpura">            
+</datalist><br><br>
+
+<!--10. Job-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="job">Previous or Current Jobs:</label><br>
+<input type="checkbox" id="1" name="job">
+<label for="1"></label>Programmer<br>
+<input type="checkbox" id="2" name="job">
+<label for="2"></label>Data scientist<br>
+<input type="checkbox" id="3" name="job">
+<label for="3"></label>Cloud management<br>
+<input type="checkbox" id="4" name="job">
+<label for="4"></label>Freelancer<br>
+<input type="checkbox" id="5" name="job">
+<label for="5"></label>Designer<br>
+<input type="checkbox" id="6" name="job">
+<label for="6"></label>Ethical hacker<br>
+<input type="checkbox" id="7" name="job">
+<label for="7"></label>Website developer<br><br>
+
+<!--11. Blood group-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="bg">Blood Group:</label><br>
+<input type="radio" id="a" name="bg">
+<label for="a">A</label>
+<input type="radio" id="b" name="bg">
+<label for="b">B</label>
+<input type="radio" id="ab" name="bg">
+<label for="ab">AB</label>
+<input type="radio" id="o" name="bg">
+<label for="o">O</label><br>
+<label style="border: 2px solid black; border-width: 0.3mm;" for="rh">Rh-factor:</label><br>
+<input type="radio" id="+" name="rh">
+<label for="+">+</label><br>
+<input type="radio" id="-" name="rh">
+<label for="-">-</label><br><br>
+
+<!--12. College name-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="coln">College:</label><br>
+<select id="coln" value="None" required>
+<option value="1">JECERC university</option>
+<option value="2">Amity university</option>    
+<option value="3">BITS pilani university</option>
+<option value="4">Poornima university</option>
+<option value="5">Rajasthan university</option>
+<option value="6">Maharaja College</option>
+<option value="7">Maharani College</option>
+<option value="8">Kanodia girls College</option>
+<option value="9">Subodh College</option>
+</select><br><br>
+
+<!--13. Area Pincode-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="pin">Area Pincode:</label><br>
+<input type="tel" id="pin" maxlength="6" size="2" required><br><br>
+
+<!--14. Send your 10 and 12 marksheet-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="files">Marksheet(10th & 12th):</label>
+<input style="text-align: center;" type="file" name="fil" id="files" multiple required><br><br>
+
+<!--15. Password-->
+
+<label style="border: 2px solid black; border-width: 0.3mm;" for="pass">Account Passcode:</label><br>
+<input type="password" id="pass" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]){8}" maxlength="8" size="3" title="Password should be of 8 letter and contain at least one Uppercase, one Lowercase and one numerical value." required><br><br>
+
+<!--16. Reset-->
+
+<input type="reset"><br><br>
+
+<!--17. Submit via image-->
+
+<input type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Green_arrow_right.svg/2560px-Green_arrow_right.svg.png" title="SUBMIT" alt="Submit" width="60" height="30">
+
+</form>
+</body>    
+</html>
